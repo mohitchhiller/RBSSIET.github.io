@@ -195,21 +195,26 @@ body {
 }
 
 .mob-nav {
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  padding: 0.5rem 0;
   display: inline-block;
   background-color: #fff;
   border-radius: 50%;
-  border: 2px solid rgb(66, 66, 66);
+  /* border: 2px solid rgb(66, 66, 66); */
   position: fixed;
   right: 5%;
   top: 5rem;
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: rgb(66, 66, 66);
   z-index: 6000;
-  font-weight: 700;
+  font-weight: 300;
   transition: all 0.2s linear;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.603);
 }
 .mob-nav:hover {
-  box-shadow: 0 0 1rem grey;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.603);
   transform: translateY(-2px);
 }
 .mob-nav:active {
