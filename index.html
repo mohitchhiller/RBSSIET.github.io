@@ -3,26 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-
-    <!--<link rel="stylesheet" href="css/icon-font.css">-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-
     <title>RBS-SIET</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav id="navdesk">
-        <a href="#">HOME</a>
+    <nav id="navdesk" class="">
+        <a href="index.html">HOME</a>
 
         <a href="#">ABOUT US</a>
         <div class="dropdown">
-            <button href="#courses" class="dropbtn">DEPARTMENTS<i class="bi bi-caret-down-fill"></i></button>
+            <button href="#courses" class="dropbtn">DEPARTMENTS <i class="bi bi-caret-down-fill"></i></button>
             <div class="dropdown-content">
                 <div class="dropdown2">
                     <button class="dropbtn2">Computer Engineering</button>
@@ -72,7 +75,7 @@
             </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">FACULTY<i class="bi bi-caret-down-fill"></i></button>
+            <button class="dropbtn">FACULTY <i class="bi bi-caret-down-fill"></i></button>
             <div class="dropdown-content">
                 <div class="dropdown2">
                     <button class="dropbtn2">Computer Engineering</button>
@@ -94,545 +97,202 @@
         <a href="#">ADMISSION</a>
 
         <div class="dropdown">
-            <button class="dropbtn">DOWNLOADS<i class="bi bi-caret-down-fill"></i></button>
+            <button class="dropbtn">DOWNLOADS <i class="bi bi-caret-down-fill"></i></button>
             <div class="dropdown-content">
-                <div class="dropdown2">
+                <!-- <div class="dropdown2">
                     <button class="dropbtn2">Important Links</button>
                     <div class="dropdown-content2">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
                     </div>
-                </div>
-                <a href="#">Link 1 </a>
+                </div> -->
+                <a href="#">IMPORTANT LINKS</a>
                 <a href="#">Link 2</a>
 
             </div>
         </div>
         <!-- <a href="#">GALLERY</a> -->
         <a href="#">TRAINING & PLACEMENT CELL</a>
-        <a href="#" onclick="openFn()">CONTACT US</a>
+        <a href="contact.html">CONTACT US</a>
+
+
     </nav>
-    <div class="navigation" id="btn-hide">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-        <label for="navi-toggle" class="navigation__button  hideNav">
-            <span class="navigation__icon">&nbsp;</span>
-        </label>
-
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="index.html" class="navigation__link">Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Courses Offered</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Admissions</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link open-btn">Contact Us</a></li>
-            </ul>
-        </nav>
+    <div class="mob-nav" onclick="openMobNav()">
+        <i class="bi bi-list"></i>
     </div>
 
     <header class="header">
-        <div class="header__logo-box">
-            <img src="img/Haryana_Flag(INDIA).png" alt="Logo" class="header__logo">
+        <div class="logo-box">
+            <img src="img/Haryana_Flag(INDIA).png" alt="">
         </div>
-
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">RAO BIRENDER SINGH</span>
-                <span class="heading-primary--sub">STATE INSTITUTE OF ENGINEERING AND TECHNOLOGY</span>
+        <div class="header-box ">
+            <h1 class="header-primary">
+                <div class="header-primary-main">Rao birender Singh</div>
+                <div class="header-primary-sub">state institute of <br> engineering and technology</div>
             </h1>
-
-            <a href="#section-tours" class="btn btn--white btn--animated">Discover our campus</a>
+            <a href="#" class="btn header-btn">Discover Our Campus</a>
         </div>
     </header>
-
-    <main>
-        <section class="section-about">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    Our Administration
-                </h2>
+    <section class="administration-section">
+        <h2 class="heading-secondry">Our Administration</h2>
+        <div class="administration-container">
+            <div class="administration-textbox">
+                <h3 class="administration-textbox-main">WELCOME TO RBS-SIET ZAINABAD REWARI</h3>
+                <p>Rao Birender Singh State Institute of Engineering & Technology has been established by the Govt. of
+                    Haryana to promote quality technical education in the state. The Haryana Govt. has provided modern
+                    and
+                    best infrastructural facilities for students to create a progressive academic environment and
+                    conducive
+                    academics for professional and technical growth.</p>
+                <h3 class="administration-textbox-main">ACADEMICS</h3>
+                <p>The academic programs are recognized by All India Council for Technical Education (AICTE) and the
+                    Institute
+                    is affiliated to Meerpur University Rewari. The Institute campus covers more than 40 acres and is
+                    situated
+                    Zainabad, Haryana 123411.</p>
             </div>
-
-            <div class="row">
-                <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">Welcome To rbs-siet zainabad rewari </h3>
-                    <p class="paragraph">
-                        Rao Birender Singh State Institute of Engineering & Technology has been established by the Govt.
-                        of Haryana to promote quality technical education in the state. The Haryana Govt. has provided
-                        modern and best infrastructural facilities for students to create a progressive academic
-                        environment and conducive academics for professional and technical growth.
-                    </p>
-
-                    <h3 class="heading-tertiary u-margin-bottom-small">Academics</h3>
-                    <p class="paragraph">
-                        The academic programs are recognized by All India Council for Technical Education (AICTE) and
-                        the Institute is affiliated to Meerpur University Rewari. The Institute campus covers more than
-                        40 acres and is situated Zainabad, Haryana 123411.
-                    </p>
-
-                    <!-- <a href="#" class="btn-text">Learn more &rarr;</a> -->
-                </div>
-                <div class="col-1-of-2">
-                    <div class="composition">
-
-                        <img srcset="img/unnamed.jpg 300w, img/unnamed.jpg 1000w"
-                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 1"
-                            class="composition__photo composition__photo--p1" src="img/unnamed.jpg">
-
-                        <img srcset="img/unnamed (1).jpg 300w, img/unnamed (1).jpg 1000w"
-                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 2"
-                            class="composition__photo composition__photo--p2" src="img/unnamed (1).jpg">
-
-                        <img srcset="img/download (1).jpg 300w, img/download (1).jpg 1000w"
-                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
-                            class="composition__photo composition__photo--p3" src="img/download (1).jpg">
-
-                        <!--
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                            -->
-                    </div>
-                </div>
+            <div class="administration-img">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
             </div>
-        </section>
-
-        <section class="section-features" id="courses">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    Courses
-                </h2>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon bi bi-laptop-fill"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Computer science</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon bi bi-hammer"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Civil</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon bi bi-tools"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Mechanical</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon bi bi-lightning"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Electrical</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-1-of-4">
-                    <div class="feature-box">
-                        <i class="feature-box__icon bi bi-globe"></i>
-                        <h3 class="heading-tertiary u-margin-bottom-small">electronics and communication</h3>
-                        <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="modal-window">
-            <div class="modal hidden">
-                <button class="close-modal">&times;</button>
-                <h1 class="modal-head-main">Rao Birender Singh State Institute of Engineering and Technology</h1>
-                <h3 class="modal-head-sub stay">Stay Connected</h3>
-                <div class="text">
-                    <h4 class="modal-head-sub">Address : </h4>
-                    <span>Mahendragarh Road, Zainabad Teshil- Dahina, Distt. Rewari...</span>
-                    <a href="https://www.google.com/maps/dir/28.1315718,77.0972751/Rao+Birender+Singh+State+Institute+Of+Engineering+%26+Technology,+Mahendragarh+Road,+Dahina,+Distt,+Zainabad,+Haryana+123411/@28.2954361,76.4637404,10z/data=!3m1!4b1!4m16!1m6!3m5!1s0x3912a13976302a8b:0x241b72adf48f6c8a!2sRao+Birender+Singh+State+Institute+Of+Engineering+%26+Technology!8m2!3d28.2815889!4d76.3915474!4m8!1m1!4e1!1m5!1m1!1s0x3912a13976302a8b:0x241b72adf48f6c8a!2m2!1d76.3915474!2d28.2815889"
-                        target="blank" class="modal-link">
-                        Click Here for directions</a>
-                    <h4 class="modal-head-sub">Phone :</h4>
-                    <a href="tel:01281-260000" class="modal-link">01281-260000</a>
-                    <h4 class="modal-head-sub">Email :</h4>
-                    <a href="mailto:officerbssiet@gmail.com" class="modal-link"> officerbssiet@gmail.com</a>
-                    <h4 class="modal-head-sub">Website :</h4>
-                    <a href="index.html" class="modal-link"> www.rbssietrewari.ac.in</a>
-                </div>
-            </div>
-            <div class="overlay hidden"></div>
-        </section>
-        <!-- <section class="section-tours" id="section-tours">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    Most popular tours
-                </h2>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--1">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--1">The Sea Explorer</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>3 day tours</li>
-                                    <li>Up to 30 people</li>
-                                    <li>2 tour guides</li>
-                                    <li>Sleep in cozy hotels</li>
-                                    <li>Difficulty: easy</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__side card__side--back card__side--back-1">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">Only</p>
-                                    <p class="card__price-value">$297</p>
-                                </div>
-                                <a href="#popup" class="btn btn--white">Book now!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--2">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--2">The Forest Hiker</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>7 day tours</li>
-                                    <li>Up to 40 people</li>
-                                    <li>6 tour guides</li>
-                                    <li>Sleep in provided tents</li>
-                                    <li>Difficulty: medium</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="card__side card__side--back card__side--back-2">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">Only</p>
-                                    <p class="card__price-value">$497</p>
-                                </div>
-                                <a href="#popup" class="btn btn--white">Book now!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-1-of-3">
-                    <div class="card">
-                        <div class="card__side card__side--front">
-                            <div class="card__picture card__picture--3">
-                                &nbsp;
-                            </div>
-                            <h4 class="card__heading">
-                                <span class="card__heading-span card__heading-span--3">The Snow Adventurer</span>
-                            </h4>
-                            <div class="card__details">
-                                <ul>
-                                    <li>5 day tours</li>
-                                    <li>Up to 15 people</li>
-                                    <li>3 tour guides</li>
-                                    <li>Sleep in provided tents</li>
-                                    <li>Difficulty: hard</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <div class="card__side card__side--back card__side--back-3">
-                            <div class="card__cta">
-                                <div class="card__price-box">
-                                    <p class="card__price-only">Only</p>
-                                    <p class="card__price-value">$897</p>
-                                </div>
-                                <a href="#popup" class="btn btn--white">Book now!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-
-        <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn btn--green">Discover all tours</a>
         </div>
-        </section>
-        -->
-
-        <section class="section-stories">
-            <div class="bg-video">
-                <video class="bg-video__content" autoplay muted loop>
-                    <source src="img/video.mp4" type="video/mp4">
-                    <source src="img/video.webm" type="video/webm">
-                    Your browser is not supported!
-                </video>
+    </section>
+    <section class="modal-window">
+        <div class="modal hidden">
+            <button class="close-modal">&times;</button>
+            <h1 class="modal-head-main">Rao Birender Singh State Institute of Engineering and Technology</h1>
+            <h3 class="modal-head-sub stay">Stay Connected</h3>
+            <div class="text">
+                <h4 class="modal-head-sub">Address : </h4>
+                <span>Mahendragarh Road, Zainabad Teshil- Dahina, Distt. Rewari...</span>
+                <a href="https://www.google.com/maps/dir/28.1315718,77.0972751/Rao+Birender+Singh+State+Institute+Of+Engineering+%26+Technology,+Mahendragarh+Road,+Dahina,+Distt,+Zainabad,+Haryana+123411/@28.2954361,76.4637404,10z/data=!3m1!4b1!4m16!1m6!3m5!1s0x3912a13976302a8b:0x241b72adf48f6c8a!2sRao+Birender+Singh+State+Institute+Of+Engineering+%26+Technology!8m2!3d28.2815889!4d76.3915474!4m8!1m1!4e1!1m5!1m1!1s0x3912a13976302a8b:0x241b72adf48f6c8a!2m2!1d76.3915474!2d28.2815889"
+                    target="blank" class="modal-link">
+                    Click Here for directions</a>
+                <h4 class="modal-head-sub">Phone :</h4>
+                <a href="tel:01281-260000" class="modal-link">01281-260000</a>
+                <h4 class="modal-head-sub">Email :</h4>
+                <a href="mailto:officerbssiet@gmail.com" class="modal-link"> officerbssiet@gmail.com</a>
+                <h4 class="modal-head-sub">Website :</h4>
+                <a href="index.html" class="modal-link"> www.rbssietrewari.ac.in</a>
             </div>
-
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">
-                    We make students genuinely happy
-                </h2>
-            </div>
-
-            <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/getty_513881682_2000124120009280226_343051.jpg" alt="Person on a tour"
-                            class="story__img">
-                        <figcaption class="story__caption">Mary Smith</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">I had best course with my friends</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                        </p>
-                    </div>
+        </div>
+        <div class="overlay hidden"></div>
+    </section>
+    <section class="courses-section">
+        <h2 class="heading-secondry courses-head">COURSES</h2>
+        <div class="box-container">
+            <div class="courses-box">
+                <div class="box-icon"><i class="bi bi-laptop-fill"></i></div>
+                <div class="box-text">
+                    <h3 class="box-text-head">COMPUTER SCIENCE</h3>
+                    <p class="box-text-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore
+                        obcaecati
+                        temporibus veritatis perspiciatis doloribus facilis praesentium sed et! Exercitationem!</p>
                 </div>
             </div>
-
-            <div class="row">
-                <div class="story">
-                    <figure class="story__shape">
-                        <img src="img/college-student-500x333.jpg" alt="Person on a tour" class="story__img">
-                        <figcaption class="story__caption">Jack Wilson</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
-                        </p>
-                    </div>
+            <div class="courses-box">
+                <div class="box-icon"><i class="bi bi-hammer"></i></div>
+                <div class="box-text">
+                    <h3 class="box-text-head">CIVIL</h3>
+                    <p class="box-text-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore
+                        obcaecati
+                        temporibus veritatis perspiciatis doloribus facilis praesentium sed et! Exercitationem!</p>
                 </div>
             </div>
-
-            <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn-text">Read all stories &rarr;</a>
-            </div>
-        </section>
-
-        <section class="section-book">
-            <div class="row">
-                <div class="book">
-                    <div class="book__form">
-                        <form action="#" class="form">
-                            <div class="u-margin-bottom-medium">
-                                <h2 class="heading-secondary">
-                                    Get admission now
-                                </h2>
-                            </div>
-
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                                <label for="name" class="form__label">Full name</label>
-                            </div>
-
-                            <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                                <label for="email" class="form__label">Email address</label>
-                            </div>
-
-                            <div class="form__group u-margin-bottom-medium">
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="small" name="size">
-                                    <label for="small" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        12TH
-                                    </label>
-                                </div>
-
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="large" name="size">
-                                    <label for="large" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        LATERAL ENTRY
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="form__group">
-                                <button class="btn btn--green query">Send query &rarr;</button>
-                            </div>
-                        </form>
-                    </div>
+            <div class="courses-box">
+                <div class="box-icon"><i class="bi bi-tools"></i></div>
+                <div class="box-text">
+                    <h3 class="box-text-head">MECHANICAL</h3>
+                    <p class="box-text-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore
+                        obcaecati
+                        temporibus veritatis perspiciatis doloribus facilis praesentium sed et! Exercitationem!</p>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="courses-box">
+                <div class="box-icon"><i class="bi bi-lightning"></i></i></div>
+                <div class="box-text">
+                    <h3 class="box-text-head">ELECTRICAL</h3>
+                    <p class="box-text-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore
+                        obcaecati
+                        temporibus veritatis perspiciatis doloribus facilis praesentium sed et! Exercitationem!</p>
+                </div>
+            </div>
+            <div class="courses-box">
+                <div class="box-icon"><i class="bi bi-globe2"></i></div>
+                <div class="box-text">
+                    <h3 class="box-text-head">ELECTRONICS & COMMUNICATION</h3>
+                    <p class="box-text-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolore
+                        obcaecati
+                        temporibus veritatis perspiciatis doloribus facilis praesentium sed et! Exercitationem!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news-section">
+        <div class="news-container">
+            <div class="news-head">
+                <h2 class="heading-secondry">NEWS / EVENTS </h2>
+            </div>
+            <div class="news-rolling-container">
+                <div class="news-slide">
+                    <a href="#"><span class="blink">new</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                    <a href="#"><span class="blink">new</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum, fugit!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="admission-section">
+        <div class="admission-container">
+            <div class="admission-input-field">
+                <h2 class="heading-secondry admission-heading">GET ADMISSION NOW</h2>
+                <input type="text" name="name" id="" placeholder="Full Name">
+                <input type="email" name="email" id="" placeholder="Email Address">
+                <div class="radio">
+                    <label for="radio"><input type="radio" name="" id="">12TH </label>
+                    <label for="radio"><input type="radio" name="" id="">LATERAL ENTRY</label>
+                </div>
+                <a href="#" class="btn contact-btn">SUBMIT</a>
 
+            </div>
+        </div>
+    </section>
     <footer class="footer">
-        <div class="footer__logo-box">
-
-            <picture class="footer__logo">
-                <img src="img/Haryana_Flag(INDIA).png" alt="">
-                <img src="img/609-6096079_responsive-image-beti-bachao-beti-padhao-logo-hd.png" alt="">
-            </picture>
-
-
-
+        <div class="footer-logo-box">
+            <img src="img/Haryana_Flag(INDIA).png" alt="">
+            <img src="img/609-6096079_responsive-image-beti-bachao-beti-padhao-logo-hd.png" alt="">
         </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link open-btn">Contact us</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                    </ul>
-                </div>
+        <div class="footer-row">
+            <div class="footer-row-1">
+                <a href="#">UNIVERSITY |</a>
+                <a href="#">CONTACT US |</a>
+                <a href="#">CARRERS |</a>
+                <a href="#">PRIVACY POLICY |</a>
+                <a href="#">TERMS</a>
             </div>
-            <div class="col-1-of-2">
-                <p class="footer__copyright">
-                    Developed By <a href="#" class="footer__link">Mohit Chillar </a> | Copyright &copy;2021
-                    RBSSIET
-                    |
-                    All Rights Reserved |
-                </p>
+            <div class="footer-row-2">
+                Developed By <a href="">MOHIT CHHILLAR & RAM| </a> Copyright &copy; 2021 RBSSIET | All Rights Reserved |
             </div>
         </div>
     </footer>
-
-    <!-- <div class="popup" id="popup">
-        <div class="popup__content">
-            <div class="popup__left">
-                <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
-                <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
-            </div>
-            <div class="popup__right">
-                <a href="#section-tours" class="popup__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
-                    booking</h3>
-                <p class="popup__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                    Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
-                    amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
-                    sit. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Malesuada pellentesque elit eget
-                    gravida cum sociis natoque penatibus et. Proin fermentum leo vel orci porta non pulvinar neque
-                    laoreet.
-                    Gravida neque convallis a cras semper. Molestie at elementum eu facilisis sed odio morbi quis.
-                    Faucibus
-                    vitae aliquet nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet sit. Amet massa
-                    vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
-                    euismod nisi porta.
-                </p>
-                <a href="#" class="btn btn--green">Book now</a>
-            </div>
-        </div>
-    </div> -->
-
-    <!--
-        <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-                <div class="col-1-of-2">
-                    Col 1 of 2
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-3">
-                    Col 1 of 3
-                </div>
-                <div class="col-2-of-3">
-                    Col 2 of 3
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-2-of-4">
-                    Col 2 of 4
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-1-of-4">
-                    Col 1 of 4
-                </div>
-                <div class="col-3-of-4">
-                    Col 3 of 4
-                </div>
-            </div>
-        </section>
-        -->
     <script src="script.js"></script>
-
 </body>
 
 </html>
