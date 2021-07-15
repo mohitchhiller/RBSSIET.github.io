@@ -24,7 +24,7 @@
     <nav id="navdesk" class="">
         <a href="index.html">HOME</a>
 
-        <a href="#">ABOUT US</a>
+        <a href="#about-click" onclick="openMobNav()">ABOUT US</a>
         <div class="dropdown">
             <button href="#courses" class="dropbtn">DEPARTMENTS <i class="bi bi-caret-down-fill"></i></button>
             <div class="dropdown-content">
@@ -135,7 +135,7 @@
             <a href="#" class="btn header-btn">Discover Our Campus</a>
         </div>
     </header>
-    <section class="administration-section">
+    <section class="administration-section" id="about-click">
         <h2 class="heading-secondry">Our Administration</h2>
         <div class="administration-container">
             <div class="administration-textbox">
@@ -154,33 +154,23 @@
                     Zainabad, Haryana 123411.</p>
             </div>
             <div class="administration-img">
-                <div class="img1"></div>
-                <div class="img2"></div>
-                <div class="img3"></div>
+                <div class="img1">
+                    <div class="img-text-main">Sh. Anil Vij</div>
+                    <div class="img-text-sub">Technical Education Minister
+                        Haryana</div>
+                </div>
+                <div class="img2">
+                    <div class="img-text-main">Dr. Raja Ram</div>
+                    <div class="img-text-sub">Principal</div>
+                </div>
+                <div class="img3">
+                    <div class="img-text-main">Sh. Vijay Dahiya </div>
+                    <div class="img-text-sub">IAS Director General, Technical Education Haryana</div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="modal-window">
-        <div class="modal hidden">
-            <button class="close-modal">&times;</button>
-            <h1 class="modal-head-main">Rao Birender Singh State Institute of Engineering and Technology</h1>
-            <h3 class="modal-head-sub stay">Stay Connected</h3>
-            <div class="text">
-                <h4 class="modal-head-sub">Address : </h4>
-                <span>Mahendragarh Road, Zainabad Teshil- Dahina, Distt. Rewari...</span>
-                <a href="https://www.google.com/maps/dir/28.1315718,77.0972751/Rao+Birender+Singh+State+Institute+Of+Engineering+%26+Technology,+Mahendragarh+Road,+Dahina,+Distt,+Zainabad,+Haryana+123411/@28.2954361,76.4637404,10z/data=!3m1!4b1!4m16!1m6!3m5!1s0x3912a13976302a8b:0x241b72adf48f6c8a!2sRao+Birender+Singh+State+Institute+Of+Engineering+%26+Technology!8m2!3d28.2815889!4d76.3915474!4m8!1m1!4e1!1m5!1m1!1s0x3912a13976302a8b:0x241b72adf48f6c8a!2m2!1d76.3915474!2d28.2815889"
-                    target="blank" class="modal-link">
-                    Click Here for directions</a>
-                <h4 class="modal-head-sub">Phone :</h4>
-                <a href="tel:01281-260000" class="modal-link">01281-260000</a>
-                <h4 class="modal-head-sub">Email :</h4>
-                <a href="mailto:officerbssiet@gmail.com" class="modal-link"> officerbssiet@gmail.com</a>
-                <h4 class="modal-head-sub">Website :</h4>
-                <a href="index.html" class="modal-link"> www.rbssietrewari.ac.in</a>
-            </div>
-        </div>
-        <div class="overlay hidden"></div>
-    </section>
+
     <section class="courses-section">
         <h2 class="heading-secondry courses-head">COURSES</h2>
         <div class="box-container">
