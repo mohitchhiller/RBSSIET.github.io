@@ -21,104 +21,46 @@
 </head>
 
 <body>
-    <nav id="navdesk" class="">
-        <a href="index.html">HOME</a>
-
-        <a href="#about-click" onclick="openMobNav()">ABOUT US</a>
-        <div class="dropdown">
-            <button href="" class="dropbtn">DEPARTMENTS <i class="bi bi-caret-down-fill"></i></button>
-            <div class="dropdown-content">
-                <div class="dropdown2">
-                    <button class="dropbtn2">Computer Engineering</button>
-                    <div class="dropdown-content2">
-                        <a href="#">First Year</a>
-                        <a href="#">Second Year</a>
-                        <a href="#">Third Year</a>
-                        <a href="#">Fourth Year</a>
-                    </div>
-                </div>
-                <div class="dropdown3">
-                    <button class="dropbtn3">Civil Engineering</button>
-                    <div class="dropdown-content3">
-                        <a href="#">First Year</a>
-                        <a href="#">Second Year</a>
-                        <a href="#">Third Year</a>
-                        <a href="#">Fourth Year</a>
-                    </div>
-                </div>
-                <div class="dropdown4">
-                    <button class="dropbtn4">Mechanical Engineering</button>
-                    <div class="dropdown-content4">
-                        <a href="#">First Year</a>
-                        <a href="#">Second Year</a>
-                        <a href="#">Third Year</a>
-                        <a href="#">Fourth Year</a>
-                    </div>
-                </div>
-                <div class="dropdown5">
-                    <button class="dropbtn5">Electrical Engineering</button>
-                    <div class="dropdown-content5">
-                        <a href="#">First Year</a>
-                        <a href="#">Second Year</a>
-                        <a href="#">Third Year</a>
-                        <a href="#">Fourth Year</a>
-                    </div>
-                </div>
-                <div class="dropdown6">
-                    <button class="dropbtn6">Electronics & Comm. Engineering</button>
-                    <div class="dropdown-content6">
-                        <a href="#">First Year</a>
-                        <a href="#">Second Year</a>
-                        <a href="#">Third Year</a>
-                        <a href="#">Fourth Year</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="dropdown">
-            <button class="dropbtn">FACULTY <i class="bi bi-caret-down-fill"></i></button>
-            <div class="dropdown-content">
-                <div class="dropdown2">
-                    <button class="dropbtn2">Computer Engineering</button>
-                </div>
-                <div class="dropdown3">
-                    <button class="dropbtn3">Civil Engineering</button>
-                </div>
-                <div class="dropdown4">
-                    <button class="dropbtn4">Mechanical Engineering</button>
-                </div>
-                <div class="dropdown5">
-                    <button class="dropbtn5">Electrical Engineering</button>
-                </div>
-                <div class="dropdown6">
-                    <button class="dropbtn6">Electronics & Comm. Engineering</button>
-                </div>
-            </div>
-        </div>
-        <a href="#">ADMISSION</a>
-
-        <div class="dropdown">
-            <button class="dropbtn">DOWNLOADS <i class="bi bi-caret-down-fill"></i></button>
-            <div class="dropdown-content">
-                <!-- <div class="dropdown2">
-                    <button class="dropbtn2">Important Links</button>
-                    <div class="dropdown-content2">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </div> -->
-                <a href="#">IMPORTANT LINKS</a>
-                <a href="#">Link 2</a>
-
-            </div>
-        </div>
-        <!-- <a href="#">GALLERY</a> -->
-        <a href="#">TRAINING & PLACEMENT CELL</a>
-        <a href="contact.html">CONTACT US</a>
-
-
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#" onclick="openNav(1)">Departments <i class="bi bi-caret-down-fill"></i></a>
+                <ul class="dropdown1 drop1 inactive-nav">
+                    <li><a href="#">computer engineering</a></li>
+                    <li><a href="#">CIVIL engineering</a></li>
+                    <li><a href="#">MECHANICAL engineering</a></li>
+                    <li><a href="#">ELECTRICAL engineering</a></li>
+                    <li><a href="#">ELECTRONICS & COMMUNICATION</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="openNav(2)">Faculty <i class="bi bi-caret-down-fill"></i></a>
+                <ul class="dropdown1 drop2 inactive-nav">
+                    <li><a href="#">computer engineering</a></li>
+                    <li><a href="#">CIVIL engineering</a></li>
+                    <li><a href="#">MECHANICAL engineering</a></li>
+                    <li><a href="#">ELECTRICAL engineering</a></li>
+                    <li><a href="#">ELECTRONICS & COMMUNICATION</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Admission</a></li>
+            <li><a href="#" onclick="openNav(3)">downloads <i class="bi bi-caret-down-fill"></i></a>
+                <ul class="dropdown1 drop3 inactive-nav">
+                    <li><a href="#" onclick="openNav(4)">Important links <i class="bi bi-caret-right-fill"></i></a>
+                        <ul class="dropdown2 drop4 inactive-nav">
+                            <li><a href="#">dummy link 1 </a></li>
+                            <li><a href="#">dummy link 2 </a></li>
+                            <li><a href="#">dummy link 3 </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">dummy link</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Training & Placement cell </a></li>
+            <li><a href="contact.html">contact us </a></li>
+        </ul>
     </nav>
+
     <div class="mob-nav" onclick="openMobNav()">
         <i class="bi bi-list"></i>
     </div>
