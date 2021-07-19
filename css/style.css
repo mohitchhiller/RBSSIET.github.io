@@ -16,6 +16,18 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 100;
 }
+.mob-nav {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: #000;
+  position: fixed;
+  z-index: 5000;
+  top: 5rem;
+  right: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.877);
+}
 #navbar {
   width: 100%;
   position: sticky;
@@ -39,6 +51,20 @@ body {
 }
 #navbar li:hover {
   background-color: rgba(65, 105, 225, 0.657);
+}
+#navbar ul .bi-caret-down-fill {
+  display: inline-block;
+  padding: 0;
+}
+#navbar ul li:hover .bi-caret-down-fill {
+  transform: rotate(180deg);
+}
+#navbar ul ul .bi-caret-right-fill {
+  display: inline-block;
+  padding: 0;
+}
+#navbar ul ul li:hover .bi-caret-right-fill {
+  transform: rotate(180deg);
 }
 #navbar li a {
   text-decoration: none;
@@ -526,10 +552,6 @@ body {
   cursor: pointer;
 }
 
-.hidden {
-  display: none;
-}
-
 .modal-window {
   font-size: 1.6rem;
 }
@@ -839,11 +861,12 @@ body {
   #navbar {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100vw;
+    right: 0;
+    width: 0;
     background: linear-gradient(to left top, aqua, blue);
     height: 100vh;
     overflow: scroll;
+    transition: all 0.3s ease-out;
   }
   #navbar ul {
     flex-direction: column;
@@ -875,6 +898,9 @@ body {
   }
   .inactive-nav {
     display: none !important;
+  }
+  #navbar.show-nav {
+    width: 100vw;
   }
 }
 @media screen and (min-width: 1000px) {

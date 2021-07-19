@@ -1,10 +1,7 @@
-const navMob = document.getElementById("navdesk");
-
 const openMobNav = function () {
-  console.log("fn workin");
-  navMob.classList.toggle("active");
-  navMob.classList.toggle("hidden");
+  document.getElementById("navbar").classList.toggle("show-nav");
 };
+
 const openNav = function (x) {
   document.querySelector(`.drop${x}`).classList.toggle("active-nav");
   document.querySelector(`.drop${x}`).classList.toggle("inactive-nav");
