@@ -27,6 +27,15 @@ body {
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.877);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mob-nav img {
+  width: 2.8rem;
+}
+.mob-nav:active {
+  transform: translateY(0.3rem);
 }
 #navbar {
   width: 100%;

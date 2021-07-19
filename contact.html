@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <nav id="navbar" class="hidden">
+    <nav id="navbar" class="">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="index.html#about-click" onclick="openMobNav()">About Us</a></li>
             <li><a href="#" onclick="openNav(1)">Departments <i class="bi bi-caret-down-fill"></i></a>
                 <ul class="dropdown1 drop1 inactive-nav">
                     <li><a href="#">computer engineering</a></li>
@@ -60,7 +60,10 @@
             <li><a href="contact.html">contact us </a></li>
         </ul>
     </nav>
-    <div class="mob-nav btn"></div>
+
+    <div class="mob-nav" onclick="openMobNav()">
+        <img src="icons/list.svg" alt="">
+    </div>
 
     <header class="header header-contact">
         <h1 class="heading-contact-main">CONTACT US</h1>

@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <nav id="navbar" class="show-nav">
+    <nav id="navbar" class="">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#about-click" onclick="openMobNav()">About Us</a></li>
             <li><a href="#" onclick="openNav(1)">Departments <i class="bi bi-caret-down-fill"></i></a>
                 <ul class="dropdown1 drop1 inactive-nav">
                     <li><a href="#">computer engineering</a></li>
@@ -62,7 +62,7 @@
     </nav>
 
     <div class="mob-nav" onclick="openMobNav()">
-        <i class="bi bi-list"></i>
+        <img src="icons/list.svg" alt="">
     </div>
 
     <header class="header">
@@ -196,8 +196,8 @@
         <div class="admission-container">
             <div class="admission-input-field">
                 <h2 class="heading-secondry admission-heading">GET ADMISSION NOW</h2>
-                <input type="text" name="name" id="" placeholder="Full Name">
-                <input type="email" name="email" id="" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Full Name">
+                <input type="email" name="email" placeholder="Email Address">
                 <div class="radio">
                     <label for="radio"><input type="radio" name="" id="">12TH </label>
                     <label for="radio"><input type="radio" name="" id="">LATERAL ENTRY</label>
