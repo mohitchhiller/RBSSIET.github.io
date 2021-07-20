@@ -16,6 +16,15 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 100;
 }
+.map-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.map-container .map {
+  width: 90vw;
+  margin: auto;
+}
 .mob-nav {
   font-size: 3rem;
   padding: 0.5rem;
@@ -95,12 +104,12 @@ body {
   opacity: 0;
 }
 .dropdown1 {
-  top: 3rem;
+  top: 13rem;
   left: 0;
   transition: all 0.2s linear;
 }
 .dropdown2 {
-  left: 101%;
+  left: 151%;
   top: 0;
   transition: all 0.2s linear;
 }
@@ -112,6 +121,12 @@ body {
 #navbar .dropdown1 li:hover .dropdown2 {
   visibility: visible;
   opacity: 1;
+}
+#navbar li:hover .dropdown1 {
+  top: 3rem;
+}
+#navbar .dropdown1 li:hover .dropdown2 {
+  left: 101%;
 }
 #navbar ul .dropdown1 li:hover a,
 #navbar ul .dropdown1 .dropdown2 li:hover a {
@@ -633,7 +648,6 @@ body {
   background-color: #fff;
 
   padding-bottom: 5rem;
-  /* margin-bottom: 25rem; */
 }
 .contact-section .heading-contact-secondry {
   font-size: 3rem;
@@ -641,7 +655,7 @@ body {
 }
 .contact-container {
   margin: auto;
-  height: 50rem;
+  height: max-content;
   width: 85vw;
 }
 
@@ -862,16 +876,19 @@ body {
     width: 50rem;
   }
   .section-white {
-    height: 135rem;
+    height: max-content;
+    margin-bottom: 0;
   }
   .contact-content {
     flex-wrap: wrap;
   }
+
   #navbar {
     position: fixed;
     top: 0;
     right: 0;
     width: 0;
+    opacity: 0;
     background: linear-gradient(to left top, aqua, blue);
     height: 100vh;
     overflow: scroll;
@@ -910,6 +927,7 @@ body {
   }
   #navbar.show-nav {
     width: 100vw;
+    opacity: 1;
   }
 }
 @media screen and (min-width: 1000px) {
