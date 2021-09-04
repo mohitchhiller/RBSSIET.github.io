@@ -850,8 +850,11 @@ body {
   .admission-heading {
     margin-bottom: 4rem;
   }
+  .background-img1 img{
+    left:5rem;
+  }
   .background-img2 img{
-    left:10rem;
+    left:5rem;
   }
 }
 
