@@ -850,6 +850,9 @@ body {
   .admission-heading {
     margin-bottom: 4rem;
   }
+  .background-img2 img{
+    left:10rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
