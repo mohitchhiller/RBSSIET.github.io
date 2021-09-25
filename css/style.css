@@ -908,7 +908,8 @@ body {
     left: 5rem;
   }
   .footer-links-box li,
-  .footer-row-1 a {
+  .footer-row-1 a,
+  .footer-links-head {
     text-align: center;
   }
 }
