@@ -666,6 +666,10 @@ body {
 .syllabi-section {
   margin: 5rem 0 5rem 15%;
 }
+.syllabi-section a.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
 .container-top {
   margin-left: 50%;
   padding-bottom: 5rem;
